@@ -32,6 +32,10 @@ def convert(hs)
   img.append(false).to_blob
 end
 
+get '/' do
+"welcomte to haigacat.herokuapp.com! here is a example.<br/><a href='123m456p789s55z'>http://haigacat.herokuapp.com/123m456p789s55z</a>"
+end
+
 get '/*' do
   hs = decode(params[:splat][0])
   if hs.length == 0 then
