@@ -1,5 +1,6 @@
 require 'sinatra'
+require './haigacat'
 
 get '/' do
-  "Hello, world"
+  Haigacat.decode("123m456s789p").to_s
 end
